@@ -8,7 +8,7 @@ import java.util.List;
 public class DaoImpl<T, K> implements Dao<T, K> {
 	private static Connection abrirConexao() throws SQLException {
 
-		String url = "jdbc:h2:~/BancoPontin";
+		String url = "jdbc:h2://169.254.245.175:8082/BancoPontin";
 		String user = "sa";
 		String pass = "sa";
 		Connection con = DriverManager.getConnection(url, user, pass);
