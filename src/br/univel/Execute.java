@@ -5,7 +5,7 @@ import java.sql.SQLException;
 public class Execute {
 
 	public static void main(String[] args) throws SQLException {
-		Dao<Cliente, Cliente> d = new Daoimpl<Cliente, Cliente>();
+		Dao<Cliente, Cliente> d = new DaoImpl<Cliente, Cliente>();
 		Cliente c = new Cliente(1,"Pontin","0001","Rua 10", EstadoCivil.SOLTEIRO);
 		Cliente c2 = new Cliente(1,"Gibimba","0002","Rua 05", EstadoCivil.CASADO);
 		Cliente c3 = new Cliente(1,"Alakart","0003","Rua 02", EstadoCivil.VIUVO);
