@@ -1,27 +1,33 @@
 package br.univel;
 
+import br.univel.Coluna;
+import br.univel.Tabela;
+import br.univel.EstadoCivil;
+
 @Tabela("CAD_CLIENTE")
 public class Cliente {
+	
 	@Coluna(pk=true)
 	private int id;
+	
 	@Coluna(nome="CLNOME")
 	private String nome;
-	@Coluna(nome="CLENDEREÇO")
-	private String endereço;
-	@Coluna(nome="CLTELEFONE")
+	
+	private String endereco;
 	private String telefone;
-	private EstadoCivil estadoCivil;
-	public Cliente() {
-		this(0, null, null, null, null);
+	private int estadocivil;
+	
+	public Cliente(){
+		this(0, null, null, null, 0);
 	}
-
-	public Cliente(int id, String nome, String endereço, String telefone, EstadoCivil estadocivil) {
+	
+	public Cliente(int id, String nome, String endereco, String telefone, int estadocivil){
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.endereço = endereço;
+		this.endereco = endereco;
 		this.telefone = telefone;
-		this.estadoCivil = estadocivil;
+		this.estadocivil = estadocivil;
 	}
 
 	public int getId() {
@@ -40,12 +46,12 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getEndereço() {
-		return endereço;
+	public String getEndereco() {
+		return endereco;
 	}
 
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 
 	public String getTelefone() {
@@ -56,12 +62,19 @@ public class Cliente {
 		this.telefone = telefone;
 	}
 
-	public EstadoCivil getEstadoCivil() {
-		return estadoCivil;
+	public int getEstadocivil() {
+		return estadocivil;
 	}
 
-	public void setEstadoCivil(EstadoCivil estadoCivil) {
-		this.estadoCivil = estadoCivil;
+	public void setEstadocivil(int estadocivil) {
+		this.estadocivil = estadocivil;
 	}
+	
+	@Override
+	public String toString(){
+		return "Cliente [id=" + id + ", nome=" + nome + ", endereco=" + endereco + ", telefone=" + telefone 
+				+ ", Estado Civil=" + estadocivil;
+	}
+	
 	
 }
