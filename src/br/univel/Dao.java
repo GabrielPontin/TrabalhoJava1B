@@ -14,4 +14,6 @@ public interface Dao<T, K> {
 
 	public List<T> listarTodos();
 
+	void Salvar(T t);
+
 }
