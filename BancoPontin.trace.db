@@ -1,0 +1,18 @@
+2016-04-27 22:29:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CAD_CLIENTE" not found; SQL statement:
+INSERT INTO CAD_CLIENTE (ID, CLNOME, ENDERECO, TELEFONE, ESTADOCIVIL) VALUES (?, ?, ?, ?, ?) [42102-191]
+2016-04-27 22:30:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CAD_CLIENTE" not found; SQL statement:
+INSERT INTO CAD_CLIENTE (ID, CLNOME, ENDERECO, TELEFONE, ESTADOCIVIL) VALUES (?, ?, ?, ?, ?) [42102-191]
+2016-05-01 23:00:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CAD_CLIENTE" not found; SQL statement:
+INSERT INTO CAD_CLIENTE (ID, CLNOME, ENDERECO, TELEFONE, ESTADOCIVIL) VALUES (?, ?, ?, ?, ?) [42102-191]
+2016-05-01 23:02:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CAD_CLIENTE" not found; SQL statement:
+INSERT INTO CAD_CLIENTE (ID, CLNOME, ENDERECO, TELEFONE, ESTADOCIVIL) VALUES (?, ?, ?, ?, ?) [42102-191]
+2016-05-01 23:02:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CAD_CLIENTE" not found; SQL statement:
+INSERT INTO CAD_CLIENTE (ID, CLNOME, ENDERECO, TELEFONE, ESTADOCIVIL) VALUES (?, ?, ?, ?, ?) [42102-191]
+2016-05-01 23:06:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CAD_CLIENTE" not found; SQL statement:
+INSERT INTO CAD_CLIENTE (ID, CLNOME, ENDERECO, TELEFONE, ESTADOCIVIL) VALUES (?, ?, ?, ?, ?) [42102-191]
