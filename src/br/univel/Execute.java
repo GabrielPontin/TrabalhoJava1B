@@ -11,8 +11,8 @@ import br.univel.EstadoCivil;
 public class Execute extends SqlGenImpl{
 
 	Connection con;
-	
 
+	
 	public Execute() throws SQLException{
 
 		AbrirConexao();
@@ -77,11 +77,12 @@ public class Execute extends SqlGenImpl{
 
 	private void AbrirConexao(){
 			try{
+				String DRIVE_CLASS = "org.h2.Drive";
 				String url = "jdbc:h2:./BancoPontin";
 				String user = "sa";
 				String pass = "sa";
 				con = DriverManager.getConnection(url, user, pass);	
-				System.out.println("Conexão Realizada!");				
+				System.out.println("Conexão Realizada! \n");				
 			}catch(SQLException e){
 				System.out.println("Erro ao realizar a conexão com o banco de dados!");
 			}
@@ -89,7 +90,7 @@ public class Execute extends SqlGenImpl{
 	}
 	
 	public static void main(String[] args) throws SQLException{
-		System.out.println("-----------------|Mecânismo Genérico para persistência de objetos|-----------------\n");
+		System.out.println("Mecânismo Persistência de Objetos");
 		new Execute();
 	}
 		
